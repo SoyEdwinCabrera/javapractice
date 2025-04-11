@@ -20,5 +20,7 @@ public class Main {
 
         int clasificacion = (int) (media /2);
         System.out.println(clasificacion);
+
+
     }
 }
