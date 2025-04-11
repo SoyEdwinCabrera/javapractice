@@ -26,6 +26,32 @@ public class BankChallenge {
         while (opcion != 9){
             System.out.println(menu);
             opcion = scanner.nextInt();
+
+            switch (opcion){
+                case 1:
+                    System.out.println("El saldo actualizado es: " + saldo + "$");
+                    break;
+                case 2:
+                    System.out.println("Cual es el valor que desea retirar?");
+                    double valorARetirar = scanner.nextDouble();
+                    if (saldo < valorARetirar){
+                        System.out.println("Saldo Insuficiente");
+                    }else{
+                        saldo = saldo - valorARetirar;
+                        System.out.println("El saldo actualizado es: " + saldo + "$");
+                    }
+                    break;
+                case 3:
+                    System.out.println("Cual es el valor que desea depositar?");
+                    double valorADepositar = scanner.nextDouble();
+                    saldo += valorADepositar;
+                    System.out.println("El saldo actualizado es: " + saldo + "$");
+                case 9:
+                    System.out.println("Saliendo del programa, gracias por utilizar nuestros servicios.");
+                    break;
+                default:
+                    System.out.println("Opcion Incorrecta");
+            }
         }
 
     }
