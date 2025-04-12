@@ -1,3 +1,5 @@
+package BankSimulator;
+
 import java.util.Scanner;
 
 public class Evaluaciones {
