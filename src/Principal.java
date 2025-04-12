@@ -3,9 +3,9 @@ import com.ejercicio.screenmatch.modelos.Pelicula;
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula = new Pelicula();
-        miPelicula.nombre = "El Señor de los Anillos";
-        miPelicula.fechaDeLanzamiento = 2001;
-        miPelicula.duracionEnMinutos = 178;
+        miPelicula.setNombre("El Señor de los Anillos");
+        miPelicula.setFechaDeLanzamiento(2001);
+        miPelicula.setDuracionEnMinutos(178);
 
         miPelicula.muestraFichaTecnica();
         miPelicula.evalua(10);
