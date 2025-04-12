@@ -8,9 +8,9 @@ public class Pelicula {
 
     boolean incluidoEnElPlan;
 
-    double sumaDeLasEvaluaciones;
+    private double sumaDeLasEvaluaciones;
 
-    int totalDeEvaluaciones;
+    private int totalDeEvaluaciones;
 
     void muestraFichaTecnica() {
         System.out.println("El nombre de la película es: " + nombre);
