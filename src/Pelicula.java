@@ -12,6 +12,10 @@ public class Pelicula {
 
     private int totalDeEvaluaciones;
 
+    int getTotalDeEvaluaciones() {
+        return totalDeEvaluaciones;
+    }
+
     void muestraFichaTecnica() {
         System.out.println("El nombre de la película es: " + nombre);
         System.out.println("Su fecha de lanzamiento es: " + fechaDeLanzamiento);

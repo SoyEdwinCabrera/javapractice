@@ -9,8 +9,7 @@ public class Principal {
         miPelicula.evalua(10);
         miPelicula.evalua(10);
 
-        System.out.println(miPelicula.sumaDeLasEvaluaciones);
-        System.out.println(miPelicula.totalDeEvaluaciones);
+        System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaNotaMedia());
 
         Pelicula otraPelicula = new Pelicula();
