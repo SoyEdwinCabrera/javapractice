@@ -5,15 +5,20 @@ public class Principal {
         miPelicula.fechaDeLanzamiento = 2001;
         miPelicula.duracionEnMinutos = 178;
 
-        System.out.println("Mi película es: " + miPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + miPelicula.fechaDeLanzamiento);
+        miPelicula.muestraFichaTecnica();
+        miPelicula.evalua(10);
+        miPelicula.evalua(10);
+
+        System.out.println(miPelicula.sumaDeLasEvaluaciones);
+        System.out.println(miPelicula.totalDeEvaluaciones);
+        System.out.println(miPelicula.calculaNotaMedia());
 
         Pelicula otraPelicula = new Pelicula();
         otraPelicula.nombre = "El Hobbit";
         otraPelicula.fechaDeLanzamiento = 2012;
         otraPelicula.duracionEnMinutos = 169;
 
-        System.out.println("Mi otra película es: " + otraPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
+        //otraPelicula.muestraFichaTecnica();
     }
 }
+
