@@ -1,4 +1,5 @@
 import com.ejercicio.screenmatch.modelos.Pelicula;
+import com.ejercicio.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -14,16 +15,14 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaNotaMedia());
 
-
-
-
-
-//        com.ejercicio.screenmatch.modelos.Pelicula otraPelicula = new com.ejercicio.screenmatch.modelos.Pelicula();
-//        otraPelicula.nombre = "El Hobbit";
-//        otraPelicula.fechaDeLanzamiento = 2012;
-//        otraPelicula.duracionEnMinutos = 169;
-//
-//        //otraPelicula.muestraFichaTecnica();
+        Serie casaDePapel = new Serie();
+        casaDePapel.setNombre("La Casa de Papel");
+        casaDePapel.setFechaDeLanzamiento(2017);
+        casaDePapel.setTemporadas(6);
+        casaDePapel.setMinutosPorEpisodio(40);
+        casaDePapel.setEpisodiosPorTemporada(8);
+        casaDePapel.muestraFichaTecnica();
+        System.out.println(casaDePapel.getDuracionEnMinutos());
     }
 }
 
