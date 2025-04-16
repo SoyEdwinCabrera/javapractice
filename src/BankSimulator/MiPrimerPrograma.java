@@ -1,7 +1,7 @@
 package BankSimulator;
 
-public class Main {
-    public static void main(String[] args){
+public class MiPrimerPrograma {
+    public static void elPrograma (){
     System.out.println("Bienvenid@ a Screen Match");
     System.out.println("Película: Matrix");
 
