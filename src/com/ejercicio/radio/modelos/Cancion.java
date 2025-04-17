@@ -2,7 +2,7 @@ package com.ejercicio.radio.modelos;
 
 public class Cancion extends Audio{
     private String album;
-    private String cantante;
+    private String artista;
     private String genero;
 
     public String getAlbum() {
@@ -13,12 +13,12 @@ public class Cancion extends Audio{
         this.album = album;
     }
 
-    public String getCantante() {
-        return cantante;
+    public String getArtista() {
+        return artista;
     }
 
-    public void setCantante(String cantante) {
-        this.cantante = cantante;
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
     public String getGenero() {
