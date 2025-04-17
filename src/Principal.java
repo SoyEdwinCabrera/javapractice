@@ -34,7 +34,7 @@ public class Principal {
         calculadora.incluir(miPelicula);
         calculadora.incluir(casaDePapel);
         calculadora.incluir(otraPelicula);
-        System.out.println("Tiempo necesario para ver tus títulos favoritos estas vacaciones " + calculadora.getTiempoTotal() + " minutos");
+        System.out.println("Tiempo necesario para ver tus títulos favoritos estas vacaciones es de: " + calculadora.getTiempoTotal() + " minutos");
 
     }
 }
