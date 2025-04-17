@@ -1,4 +1,6 @@
 import com.ejercicio.screenmatch.calculos.CalculadoraDeTiempo;
+import com.ejercicio.screenmatch.calculos.FiltroRecomendacion;
+import com.ejercicio.screenmatch.modelos.Episodio;
 import com.ejercicio.screenmatch.modelos.Pelicula;
 import com.ejercicio.screenmatch.modelos.Serie;
 
@@ -34,8 +36,17 @@ public class Principal {
         calculadora.incluir(miPelicula);
         calculadora.incluir(casaDePapel);
         calculadora.incluir(otraPelicula);
-        System.out.println("Tiempo necesario para ver tus títulos favoritos estas vacaciones es de: " + calculadora.getTiempoTotal() + " minutos");
+        //System.out.println("Tiempo necesario para ver tus títulos favoritos estas vacaciones es de: " + calculadora.getTiempoTotal() + " minutos");
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtrar(miPelicula);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("El primer capitulo de: La casa de papel");
+        episodio.setSerie(casaDePapel);
+        episodio.setTotalVisualizaciones(50);
+        filtroRecomendacion.filtrar(episodio);
     }
 }
 

@@ -2,7 +2,7 @@ package com.ejercicio.screenmatch.calculos;
 
 public class FiltroRecomendacion {
 
-    void filtrar(Clasificacion clasificacion){
+    public void filtrar(Clasificacion clasificacion){
         if (clasificacion.getClasificacion() >= 4){
             System.out.println("Muy buen evaluado en el momento");
         } else if  (clasificacion.getClasificacion() >= 2){
