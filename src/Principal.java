@@ -9,8 +9,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("El Señor de los Anillos");
+        Pelicula miPelicula = new Pelicula("El Señor de los Anillos");
         miPelicula.setFechaDeLanzamiento(2001);
         miPelicula.setDuracionEnMinutos(178);
 
@@ -30,8 +29,7 @@ public class Principal {
         casaDePapel.muestraFichaTecnica();
         System.out.println(casaDePapel.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("El Hobbit");
+        Pelicula otraPelicula = new Pelicula("El Hobbit");
         otraPelicula.setFechaDeLanzamiento(2012);
         otraPelicula.setDuracionEnMinutos(180);
 
@@ -51,8 +49,7 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        var peliculaDeAccion = new Pelicula();
-        peliculaDeAccion.setNombre("Misión Imposible");
+        var peliculaDeAccion = new Pelicula("Misión Imposible");
         peliculaDeAccion.setDuracionEnMinutos(110);
         peliculaDeAccion.setFechaDeLanzamiento(1996);
 
@@ -63,10 +60,10 @@ public class Principal {
 
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
         System.out.println("La pelicula es: " + listaDePeliculas.get(0).getNombre());
-
         System.out.println(listaDePeliculas.toString());
-
         System.out.println("toString de la pelicula: " + listaDePeliculas.get(0).toString());
+
+        Object objeto = peliculaDeAccion;
     }
 }
 
