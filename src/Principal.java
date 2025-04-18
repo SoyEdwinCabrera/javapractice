@@ -1,4 +1,5 @@
 import IfElse.AprobacionAsignatura;
+import IfElse.PasswordVerification;
 import com.ejercicio.screenmatch.calculos.CalculadoraDeTiempo;
 import com.ejercicio.screenmatch.calculos.FiltroRecomendacion;
 import com.ejercicio.screenmatch.modelos.Episodio;
@@ -49,9 +50,8 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-//        ParImpar parImpar = new ParImpar();
-        AprobacionAsignatura asignatura = new AprobacionAsignatura();
-        asignatura.aprobacionAsignatura();
+        PasswordVerification passwordVerification = new PasswordVerification();
+        passwordVerification.verifyPassword();
     }
 }
 
