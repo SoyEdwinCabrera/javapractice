@@ -9,7 +9,7 @@ public class ParImpar {
     public ParImpar() {
         System.out.println("Introduce un número: ");
         this.numero = superscanner.nextInt();
-
         System.out.println((numero % 2 == 0)?"El número " + numero + " es par.":"El número " + numero + " es impar.");
+        superscanner.close();
     }
 }

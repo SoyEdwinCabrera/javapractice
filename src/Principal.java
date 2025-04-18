@@ -1,7 +1,7 @@
+import IfElse.AprobacionAsignatura;
 import com.ejercicio.screenmatch.calculos.CalculadoraDeTiempo;
 import com.ejercicio.screenmatch.calculos.FiltroRecomendacion;
 import com.ejercicio.screenmatch.modelos.Episodio;
-import IfElse.ParImpar;
 import com.ejercicio.screenmatch.modelos.Pelicula;
 import com.ejercicio.screenmatch.modelos.Serie;
 
@@ -49,7 +49,9 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        ParImpar parImpar = new ParImpar();
+//        ParImpar parImpar = new ParImpar();
+        AprobacionAsignatura asignatura = new AprobacionAsignatura();
+        asignatura.aprobacionAsignatura();
     }
 }
 
