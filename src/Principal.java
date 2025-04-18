@@ -49,8 +49,8 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        VerificacionDiaSemana verificacionDiaSemana = new VerificacionDiaSemana();
-        verificacionDiaSemana.verificacion();
+        VerificacionValorPermitido verificacionValorPermitido = new VerificacionValorPermitido();
+        verificacionValorPermitido.verificacion();
     }
 }
 
