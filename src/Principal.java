@@ -49,8 +49,8 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        VerificacionValorPermitido verificacionValorPermitido = new VerificacionValorPermitido();
-        verificacionValorPermitido.verificacion();
+        VerificacionTriangulo verificacionTriangulo = new VerificacionTriangulo();
+        verificacionTriangulo.verificacion();
     }
 }
 
