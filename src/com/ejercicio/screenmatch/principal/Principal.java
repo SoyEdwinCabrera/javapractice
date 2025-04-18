@@ -1,4 +1,5 @@
-import Challenge_2.IfElse.*;
+package com.ejercicio.screenmatch.principal;
+
 import com.ejercicio.screenmatch.calculos.CalculadoraDeTiempo;
 import com.ejercicio.screenmatch.calculos.FiltroRecomendacion;
 import com.ejercicio.screenmatch.modelos.Episodio;

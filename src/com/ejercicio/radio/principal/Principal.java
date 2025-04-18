@@ -6,8 +6,8 @@ import com.ejercicio.radio.modelos.Podcast;
 
 public class Principal {
 
-    public  void principal() {
-        // Crear una instancia de la clase Principal
+    public void principal() {
+        // Crear una instancia de la clase com.ejercicio.screenmatch.principal.Principal
         Cancion miCancion = new Cancion();
         miCancion.setTitulo("Forever");
         miCancion.setArtista("Kiss");
