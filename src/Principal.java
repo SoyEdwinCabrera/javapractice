@@ -9,8 +9,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula("El Señor de los Anillos");
-        miPelicula.setFechaDeLanzamiento(2001);
+        Pelicula miPelicula = new Pelicula("El Señor de los Anillos", 2001);
         miPelicula.setDuracionEnMinutos(178);
 
         miPelicula.muestraFichaTecnica();
@@ -20,17 +19,14 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaNotaMedia());
 
-        Serie casaDePapel = new Serie();
-        casaDePapel.setNombre("La Casa de Papel");
-        casaDePapel.setFechaDeLanzamiento(2017);
+        Serie casaDePapel = new Serie("La Casa de Papel", 2017);
         casaDePapel.setTemporadas(6);
         casaDePapel.setMinutosPorEpisodio(40);
         casaDePapel.setEpisodiosPorTemporada(8);
         casaDePapel.muestraFichaTecnica();
         System.out.println(casaDePapel.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula("El Hobbit");
-        otraPelicula.setFechaDeLanzamiento(2012);
+        Pelicula otraPelicula = new Pelicula("El Hobbit", 2012);
         otraPelicula.setDuracionEnMinutos(180);
 
         CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
@@ -49,8 +45,7 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        var peliculaDeAccion = new Pelicula("Misión Imposible");
-        peliculaDeAccion.setDuracionEnMinutos(110);
+        var peliculaDeAccion = new Pelicula("Misión Imposible", 1996);
         peliculaDeAccion.setFechaDeLanzamiento(1996);
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
