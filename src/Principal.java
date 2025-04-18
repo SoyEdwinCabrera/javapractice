@@ -1,4 +1,5 @@
 import IfElse.AprobacionAsignatura;
+import IfElse.ComparandoDosNumeros;
 import IfElse.PasswordVerification;
 import com.ejercicio.screenmatch.calculos.CalculadoraDeTiempo;
 import com.ejercicio.screenmatch.calculos.FiltroRecomendacion;
@@ -50,8 +51,8 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        PasswordVerification passwordVerification = new PasswordVerification();
-        passwordVerification.verifyPassword();
+        ComparandoDosNumeros comparandoDosNumeros = new ComparandoDosNumeros();
+        comparandoDosNumeros.comparandoNumeros();
     }
 }
 
