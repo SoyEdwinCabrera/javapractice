@@ -1,6 +1,5 @@
-package IfElse;
+package Challenge_2.IfElse;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class VerificacionDiaSemana {

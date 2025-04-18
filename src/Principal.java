@@ -1,9 +1,11 @@
-import IfElse.*;
+import Challenge_2.IfElse.*;
 import com.ejercicio.screenmatch.calculos.CalculadoraDeTiempo;
 import com.ejercicio.screenmatch.calculos.FiltroRecomendacion;
 import com.ejercicio.screenmatch.modelos.Episodio;
 import com.ejercicio.screenmatch.modelos.Pelicula;
 import com.ejercicio.screenmatch.modelos.Serie;
+
+import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
@@ -49,8 +51,21 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtrar(episodio);
 
-        VerificacionTriangulo verificacionTriangulo = new VerificacionTriangulo();
-        verificacionTriangulo.verificacion();
+        var peliculaDeAccion = new Pelicula();
+        peliculaDeAccion.setNombre("Misión Imposible");
+        peliculaDeAccion.setDuracionEnMinutos(110);
+        peliculaDeAccion.setFechaDeLanzamiento(1996);
+
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(miPelicula);
+        listaDePeliculas.add(otraPelicula);
+        listaDePeliculas.add(peliculaDeAccion);
+
+        System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
+        System.out.println("La pelicula es: " + listaDePeliculas.get(0).getNombre());
+
+        System.out.println(listaDePeliculas);
+
     }
 }
 

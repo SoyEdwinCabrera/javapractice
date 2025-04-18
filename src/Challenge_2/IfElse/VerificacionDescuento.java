@@ -1,4 +1,4 @@
-package IfElse;
+package Challenge_2.IfElse;
 
 import java.util.Scanner;
 
