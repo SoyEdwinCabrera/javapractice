@@ -17,16 +17,19 @@ public class PrincipalConListas {
         peliculaDeAccion.evalua(10);
         Serie casaDePapel = new Serie("La Casa de Papel", 2017);
 
+        Pelicula p1 = peliculaDeAccion;
+
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(miPelicula);
         lista.add(otraPelicula);
         lista.add(peliculaDeAccion);
         lista.add(casaDePapel);
 
-        for(Titulo titulo : lista) {
-            System.out.println(titulo);
-            Pelicula pelicula = (Pelicula) titulo;
-            System.out.println(pelicula.getClasificacion());
+        for(Titulo item : lista) {
+            System.out.println(item.getNombre());
+            if (item instanceof Pelicula pelicula && pelicula.getClasificacion()>2) {
+                System.out.println(pelicula.getClasificacion());
+            }
 //            System.out.println("La fecha de lanzamiento es: " + titulo.getFechaDeLanzamiento());
 //            System.out.println("La duración en minutos es: " + titulo.getDuracionEnMinutos());
 //            System.out.println("¿Está incluido en el plan? " + titulo.isIncluidoEnElPlan());
