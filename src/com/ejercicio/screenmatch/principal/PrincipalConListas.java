@@ -5,6 +5,7 @@ import com.ejercicio.screenmatch.modelos.Serie;
 import com.ejercicio.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -30,10 +31,18 @@ public class PrincipalConListas {
             if (item instanceof Pelicula pelicula && pelicula.getClasificacion()>2) {
                 System.out.println(pelicula.getClasificacion());
             }
-//            System.out.println("La fecha de lanzamiento es: " + titulo.getFechaDeLanzamiento());
-//            System.out.println("La duración en minutos es: " + titulo.getDuracionEnMinutos());
-//            System.out.println("¿Está incluido en el plan? " + titulo.isIncluidoEnElPlan());
-//            System.out.println();
         }
+
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+        listaDeArtistas.add("Penélope Cruz");
+        listaDeArtistas.add("Antonio Banderas");
+        listaDeArtistas.add("Robert Downey Jr.");
+        System.out.println(listaDeArtistas);
+
+        Collections.sort(listaDeArtistas);
+        System.out.println("Lista de artistas ordenada: " + listaDeArtistas);
+
+        Collections.sort(lista);
+        System.out.println("Lista de títulos ordenada: " + lista);
     }
 }
