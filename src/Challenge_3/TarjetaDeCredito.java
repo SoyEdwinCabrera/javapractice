@@ -10,7 +10,7 @@ public class TarjetaDeCredito {
 
     public TarjetaDeCredito(double limite) {
         this.limite = limite;
-        this.saldo = saldo;
+        this.saldo = limite;
         this.listaDeCompras = new ArrayList<>();
     }
 
