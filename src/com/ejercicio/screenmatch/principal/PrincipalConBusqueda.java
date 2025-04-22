@@ -21,27 +21,32 @@ public class PrincipalConBusqueda {
 
         String direction = "http://www.omdbapi.com/?t=" + busqueda + "&apikey=d33d3103";
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI. create (direction))
-            .build();
-        HttpResponse<String> response = client
-                .send(request, HttpResponse.BodyHandlers.ofString());
+        try {
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(direction))
+                    .build();
+            HttpResponse<String> response = client
+                    .send(request, HttpResponse.BodyHandlers.ofString());
 
-        String json = response.body();
-        System.out.println(json);
+            String json = response.body();
+            System.out.println(json);
 
-        Gson gson = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                .create();
-        TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
-        System.out.println(miTituloOmdb);
-        try{
+            Gson gson = new GsonBuilder()
+                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                    .create();
+            TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+            System.out.println(miTituloOmdb);
+
             Titulo miTitulo = new Titulo(miTituloOmdb);
-            System.out.println(miTitulo);
-        }catch (NumberFormatException e){
+            System.out.println("Titulo ya convertido: " + miTitulo);
+        } catch (NumberFormatException e) {
             System.out.println("No se encontró la película");
             System.out.println(e.getMessage());
+        }catch (IllegalArgumentException e){
+            System.out.println("Error en la URI, verifique la dirección");
+        } catch (Exception e) {
+            System.out.println("Error inesperado: " + e.getMessage());
         }
         System.out.println("Finalizó la ejecución del programa");
     }
