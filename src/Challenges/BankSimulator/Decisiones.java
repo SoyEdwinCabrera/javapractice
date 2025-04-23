@@ -1,4 +1,4 @@
-package BankSimulator;
+package Challenges.BankSimulator;
 
 public class Decisiones {
 

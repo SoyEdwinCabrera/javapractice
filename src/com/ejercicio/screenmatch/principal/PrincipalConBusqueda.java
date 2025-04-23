@@ -57,6 +57,7 @@ public class PrincipalConBusqueda {
                 Titulo miTitulo = new Titulo(miTituloOmdb);
                 System.out.println("Titulo ya convertido: " + miTitulo);
                 titulos.add(miTitulo);
+
             } catch (NumberFormatException e) {
                 System.out.println("No se encontró la película");
                 System.out.println(e.getMessage());

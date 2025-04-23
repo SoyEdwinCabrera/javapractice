@@ -1,4 +1,4 @@
-package BankSimulator;
+package Challenges.BankSimulator;
 
 import java.util.Scanner;
 
