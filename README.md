@@ -45,6 +45,34 @@ El enfoque del proyecto está en aprender y practicar conceptos fundamentales y 
 - **Aprendizaje incremental**: Desde conceptos básicos hasta desafíos avanzados.
 - **Enfoque en buenas prácticas**: Ejemplos que siguen estándares de codificación profesional.
 
+
+## Estructura del Proyecto
+
+El siguiente diagrama describe la estructura básica del proyecto:
+
+![Diagrama de la Estructura del Proyecto](docs/diagram.png)
+
+javapractice/
+├── src/
+│   ├── main/
+│   │   ├── App.java
+│   │   ├── utils/
+│   │   │   ├── Helper.java
+│   │   │   └── Validator.java
+│   └── test/
+│       ├── AppTest.java
+│       ├── utils/
+│           └── HelperTest.java
+
+### Descripción
+
+- **src/main/**: Contiene el código fuente principal del proyecto.
+  - **App.java**: Punto de entrada principal de la aplicación.
+  - **utils/**: Contiene utilidades como `Helper` y `Validator`.
+- **src/test/**: Contiene las pruebas unitarias.
+  - **AppTest.java**: Pruebas de la aplicación principal.
+  - **utils/**: Pruebas para las clases utilitarias.
+
 ## Instalación
 
 1. Clona este repositorio en tu computadora local:
